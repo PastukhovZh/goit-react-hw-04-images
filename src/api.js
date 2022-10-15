@@ -14,6 +14,6 @@ export const getPictures = async (input, page) => {
     return response.data.hits
     
   } catch (error) {
-    toast.error('It is all..');
+    toast.error('It`s error, sorry');
   }
 };
