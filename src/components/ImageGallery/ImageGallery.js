@@ -87,7 +87,7 @@ export const ImageGallery = ({input}) => {
   useEffect(() => {
     if (input!== '') {
           setLoading(true)
-      getPictures(input, page).then(response => {
+      getPictures(input).then(response => {
         if (response.length > 0) {
 
           setPictures([...response], setLoading(false))
@@ -103,7 +103,6 @@ export const ImageGallery = ({input}) => {
         setPage(1)
         setPictures([])
       }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [input])
   
   const openModal = (imageURL) => {
