@@ -100,7 +100,7 @@ export const ImageGallery = ({input}) => {
     }
 
       return () => {
-        setPage(page)
+        setPage(1)
         setPictures([])
       }
     }, [input, page])
