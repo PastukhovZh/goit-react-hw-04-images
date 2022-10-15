@@ -103,7 +103,8 @@ export const ImageGallery = ({input}) => {
         setPage(1)
         setPictures([])
       }
-    }, [input, page])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [input])
   
   const openModal = (imageURL) => {
     setIsModalOpen(true)
