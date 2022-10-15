@@ -103,7 +103,7 @@ export const ImageGallery = ({input}) => {
         setPage(page)
         setPictures([])
       }
-    }, [input])
+    }, [input, page])
   
   const openModal = (imageURL) => {
     setIsModalOpen(true)
